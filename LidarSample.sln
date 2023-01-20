@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LidarSample", "LidarSample\LidarSample.csproj", "{62E50076-8ED3-4804-818A-76C228522509}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62E50076-8ED3-4804-818A-76C228522509}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{62E50076-8ED3-4804-818A-76C228522509}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{62E50076-8ED3-4804-818A-76C228522509}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{62E50076-8ED3-4804-818A-76C228522509}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{62E50076-8ED3-4804-818A-76C228522509}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{62E50076-8ED3-4804-818A-76C228522509}.Debug|iPhone.Build.0 = Debug|iPhone
+		{62E50076-8ED3-4804-818A-76C228522509}.Release|iPhone.ActiveCfg = Release|iPhone
+		{62E50076-8ED3-4804-818A-76C228522509}.Release|iPhone.Build.0 = Release|iPhone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF5A974A-235B-4CB9-A7C3-591D0C4F19C7}
+	EndGlobalSection
+EndGlobal
