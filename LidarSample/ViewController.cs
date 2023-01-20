@@ -53,6 +53,7 @@ namespace LidarSample
             showDepthButton.ExclusiveTouch = true;
             showDepthButton.TouchUpInside += (sender, e) =>
             {
+                showDepthButton.Enabled = false;
                 if (captured)
                 {
                     showDepthButton.SetTitle("キャプチャ開始", UIControlState.Normal);
@@ -68,6 +69,8 @@ namespace LidarSample
                     depthMap.Lock(CoreVideo.CVPixelBufferLock.ReadOnly);
                     var depthBuffer = new float[depthMap.Width * depthMap.Height];
                     Marshal.Copy(depthMap.BaseAddress, depthBuffer, 0, depthBuffer.Length);
+                    depthMap.Unlock(CoreVideo.CVPixelBufferLock.ReadOnly);
+
                     for (var y = 0; y < depthMap.Height; y++)
                     {
                         for (var x = 0; x < depthMap.Width; x++)
@@ -76,7 +79,6 @@ namespace LidarSample
                             System.Diagnostics.Debug.WriteLine($"Depth : x = {x}, y = {y}, distance = {distance}");
                         }
                     }
-                    depthMap.Unlock(CoreVideo.CVPixelBufferLock.ReadOnly);
 
                     _arscnView.Session.Pause();
                     captured = false;
@@ -92,6 +94,7 @@ namespace LidarSample
                     StartSession();
                     captured = true;
                 }
+                showDepthButton.Enabled = true;
             };
         }
 
